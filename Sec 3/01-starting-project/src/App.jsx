@@ -1,4 +1,5 @@
 import Header from "./components/Header/Header.jsx";
+import Product from "./components/Product/Product.jsx";
 import CoreConcepts from "./components/CoreConcepts.jsx";
 import Examples from "./components/Examples.jsx";
 
@@ -10,6 +11,7 @@ function App() {
         <CoreConcepts />
         <Examples />
       </main>
+      <Product />
     </>
   );
 }

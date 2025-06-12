@@ -2,7 +2,7 @@ import reactImg from "../../assets/react-core-concepts.png";
 
 import "./Header.css";
 
-function genRandomInt(max) {
+export function genRandomInt(max) {
   return Math.floor(Math.random() * (max + 1));
 }
 
