@@ -2,6 +2,7 @@ import { useState } from "react";
 import TabButton from "./TabButton";
 import { EXAMPLES } from "../data";
 import Section from "./Section";
+import Tabs from "./Tabs";
 
 export default function Examples() {
   const [selectedTopic, setSelectedTopic] = useState("");
@@ -27,37 +28,42 @@ export default function Examples() {
   }
   return (
     <Section title="Examples" id="examples" className="">
-      <menu>
-        <TabButton
-          label="Components"
-          isSelected={selectedTopic === "components"}
-          onClick={() => handSelect("components")}
-        >
-          Components
-        </TabButton>
-        <TabButton
-          label="JSX"
-          isSelected={selectedTopic === "jsx"}
-          onClick={() => handSelect("jsx")}
-        >
-          JSX
-        </TabButton>
-        <TabButton
-          label="Props"
-          isSelected={selectedTopic === "props"}
-          onClick={() => handSelect("props")}
-        >
-          Props
-        </TabButton>
-        <TabButton
-          label="State"
-          isSelected={selectedTopic === "state"}
-          onClick={() => handSelect("state")}
-        >
-          State
-        </TabButton>
-      </menu>
-      {tabContent}
+      <Tabs
+        buttons={
+          <>
+            <TabButton
+              label="Components"
+              isSelected={selectedTopic === "components"}
+              onClick={() => handSelect("components")}
+            >
+              Components
+            </TabButton>
+            <TabButton
+              label="JSX"
+              isSelected={selectedTopic === "jsx"}
+              onClick={() => handSelect("jsx")}
+            >
+              JSX
+            </TabButton>
+            <TabButton
+              label="Props"
+              isSelected={selectedTopic === "props"}
+              onClick={() => handSelect("props")}
+            >
+              Props
+            </TabButton>
+            <TabButton
+              label="State"
+              isSelected={selectedTopic === "state"}
+              onClick={() => handSelect("state")}
+            >
+              State
+            </TabButton>
+          </>
+        }
+      >
+        {tabContent}
+      </Tabs>
     </Section>
   );
 }
