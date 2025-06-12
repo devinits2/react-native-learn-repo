@@ -1,0 +1,20 @@
+{
+  "name": "react-native-learn-repo-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devinits2/react-native-learn-repo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devinits2/react-native-learn-repo/issues"
+  },
+  "homepage": "https://github.com/devinits2/react-native-learn-repo#readme",
+  "description": ""
+}
