@@ -18,5 +18,8 @@
     "url": "https://github.com/devinits2/react-native-learn-repo/issues"
   },
   "homepage": "https://github.com/devinits2/react-native-learn-repo#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "react-scripts": "^5.0.1"
+  }
 }
